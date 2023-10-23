@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apni Library Management</title>
+    <style>
+        body {
+    background-image: url('https://img.freepik.com/free-photo/opened-book-library_23-2147852007.jpg?t=st=1698044495~exp=1698045095~hmac=003a159932160a015f6fbb03a29f2dc3767411f4466414af7cdae99e6a7ab482');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 100%;
+   
+}
+      /*  body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('your-background-image.jpg'); /* Replace 'your-background-image.jpg' with your image path
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            margin: 0;
+            padding: 0;
+        } */
+
+        h1 {
+            font-size: 70px;
+            background-color: rgba(86, 212, 240, 0.7); /* Dark semi-transparent background for the heading */
+            padding: 20px 0;
+        }
+
+        i {
+            font-size: 90px;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); /* Light semi-transparent background for the login container */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+        }
+      /*  input-container input {
+    padding: 10px;
+    margin: 5px;
+    width: 100%; /* Make all input boxes the same width 
+}*/
+
+        .input-container input {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background for the form */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+            color: white;
+        }
+
+        label {
+            font-size: 36px;
+        }
+
+        input {
+            font-size: 36px;
+            padding: 20px;
+            margin: 20px 0;
+            width: 100%;
+            border: 1px solid #3498db;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 40px;
+        }
+
+        button {
+            font-size: 36px;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Media query for smaller screens (e.g., mobile devices) */
+        @media (max-width: 600px) {
+            .login-container {
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1><b><i>Welcome to <u>Apni Library Management</u></i></b></h1>
+    <div class="login-container">
+        <h2>Login</h2>
+        <div class="input-container">
+            <input type="text" placeholder="Username" name="username" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
+        </div>
+        <button class="login-button" type="submit">Log In</button>
+    </div>
+    <form>
+        <label for="bookSearch">Search for a Book:</label>
+        <input type="text" id="bookSearch" name="bookSearch" placeholder="Enter book title">
+        
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" placeholder="Enter author's name">
+        
+        <p>Book Credits:</p>
+        
+        <input type="checkbox" id="bookTaken" name="bookTaken" value="taken">
+        <label for="bookTaken">Book Taken</label>
+        
+        <input type="checkbox" id="bookReturned" name="bookReturned" value="returned">
+        <label for="bookReturned">Book Returned</label>
+        
+        <button class="login-button" type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
